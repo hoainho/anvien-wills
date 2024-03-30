@@ -1,3 +1,17 @@
+@import 'variables.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'SFPDisplay';
+    src: url('../../public/fonts/SFProDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container {
+    max-width: var(--max-width);
+    width: 100%;
+    margin: 0 auto;
+}
