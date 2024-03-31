@@ -1,5 +1,7 @@
-export default function ApplicationLogo(props) {
+export default function ApplicationLogo({className = ""}) {
     return (
-        <img src="images/logo.png" alt="logo-app" />
+        <div className={`w-full h-full ${className}`}>
+            <img src="images/logo.png" alt="logo-app" className="w-full h-full"/>
+        </div>
     );
 }

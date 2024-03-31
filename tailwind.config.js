@@ -27,6 +27,9 @@ export default {
             "av-border": "#F4F4F5",
             "av-bg": "#0F172A",
             "av-bg-card": "#DBEAFE",
+            "av-bg-step-1": "#FFF8DE",
+            "av-bg-step-2": "#FFE2D2",
+            "av-bg-step-3": "#DBE9FF",
         },
     },
 

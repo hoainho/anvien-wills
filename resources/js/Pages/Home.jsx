@@ -1,13 +1,16 @@
+import AccordionFaq from "@/Components/AccordionFAQ";
 import ApplicationLogo from "@/Components/ApplicationLogo";
 import ChoiceReasonCard from "@/Components/ChoiceReasonCard";
+import HowItWorkCard from "@/Components/HowItWorkCard";
 import PackageCard from "@/Components/PackageCard";
 import PrimaryButton from "@/Components/PrimaryButton";
 import SubTitleCommon from "@/Components/SubTitleCommon";
 import TitleCommon from "@/Components/TitleCommon";
+import ContainerLandingPage from "@/Layouts/Container";
 import { Link } from "@inertiajs/react";
 import { useState } from "react";
 
-export default function Home({ auth, laravelVersion, phpVersion }) {
+export default function Home() {
     const [willChoiceReason] = useState([
         {
             id: 1,
@@ -31,6 +34,154 @@ export default function Home({ auth, laravelVersion, phpVersion }) {
         },
     ]);
 
+    const [packages] = useState([
+        {
+            id: 1,
+            name: "Di chúc An Viên",
+            price: 0,
+            unit: "",
+            features: [
+                {
+                    name: "1 will",
+                    disable: false,
+                },
+                {
+                    name: "Free forever",
+                    disable: false,
+                },
+                {
+                    name: "Up to 3 beneficiaries",
+                    disable: false,
+                },
+                {
+                    name: "Up to $100,000 in assets",
+                    disable: true,
+                },
+                {
+                    name: "No lawyer required",
+                    disable: true,
+                },
+            ],
+            isHighlight: false,
+        },
+        {
+            id: 2,
+            name: "Di chúc An Viên NFT",
+            price: 2,
+            unit: "tháng",
+            features: [
+                {
+                    name: "1 will",
+                    disable: false,
+                },
+                {
+                    name: "Free forever",
+                    disable: false,
+                },
+                {
+                    name: "Up to 3 beneficiaries",
+                    disable: false,
+                },
+                {
+                    name: "Up to $100,000 in assets",
+                    disable: false,
+                },
+                {
+                    name: "No lawyer required",
+                    disable: true,
+                },
+                {
+                    name: "Lawyer consultation included",
+                    disable: true,
+                },
+            ],
+            isHighlight: true,
+        },
+        {
+            id: 3,
+            name: "Di chúc An Viên NFT",
+            price: 100,
+            unit: "phiên tư vấn",
+            features: [
+                {
+                    name: "1 will",
+                    disable: false,
+                },
+                {
+                    name: "Free forever",
+                    disable: false,
+                },
+                {
+                    name: "Up to 3 beneficiaries",
+                    disable: false,
+                },
+                {
+                    name: "Up to $100,000 in assets",
+                    disable: false,
+                },
+                {
+                    name: "No lawyer required",
+                    disable: false,
+                },
+            ],
+            isHighlight: false,
+        },
+    ]);
+
+    const [howItWorksStep] = useState([
+        {
+            id: 1,
+            icon: "/icons/chat.png",
+            bgColor: "bg-av-bg-step-1",
+            title: "Answer our simple questions",
+            description:
+                "Our online journey makes writing a will quick and easy. You can do it from the comfort of your own home in just 15 minutes.",
+        },
+        {
+            id: 2,
+            icon: "/icons/person_check.png",
+            bgColor: "bg-av-bg-step-2",
+            title: "Get it approved by our specialists",
+            description:
+                "Our online will writing service includes specialist checking to make sure your wishes are clear – and it only takes up to 5 days.",
+        },
+        {
+            id: 3,
+            icon: "/icons/blockchain.png",
+            bgColor: "bg-av-bg-step-3",
+            title: "Digitalize Authorized with NFT Tech",
+            description:
+                "After writing a will and getting it checked by our specialists, you need to print and sign it in front of two witnesses to make it legally binding. Download your will to print at home, or we can print it for you.",
+        },
+    ]);
+
+    const [faqs] = useState([
+        {
+            id: 1,
+            question: "How does An Vien's online will service work?",
+            answer: "Our online will writing service allows you to easily create your will from the comfort of your own home. You simply answer",
+        },
+        {
+            id:2,
+            question: "How much does An Vien's online will service cost?",
+            answer: "Our basic online will writing service is completely free. You can create one will with up to 3 beneficiaries and assets up to $100,000 value",
+        },
+        {
+            id:3,
+            question: "Can I include special requests in my will?",
+            answer: "Yes, you can include any special requests in the 'Message to loved ones' section of your will",
+        },
+        {
+            id:4,
+            question: "Can I change the beneficiaries of my will?",
+            answer: "Yes, you can change the beneficiaries of your will at any time for free using our online service",
+        },
+        {
+            id:5,
+            question: "Do I need witnesses to sign my will?",
+            answer: "Yes, for your will to be legally valid, you need to sign it in the presence"
+        }
+    ])
     return (
         <div className="flex flex-col px-[16px] xl:p-0">
             {/* Hero */}
@@ -81,7 +232,7 @@ export default function Home({ auth, laravelVersion, phpVersion }) {
             </div>
 
             {/* Why An Vien Will? */}
-            <div className="flex flex-col md:py-[80px] my-[20px] md:mt-0">
+            <ContainerLandingPage>
                 <SubTitleCommon className="text-center">
                     Lorem ipsum dolor
                 </SubTitleCommon>
@@ -98,10 +249,10 @@ export default function Home({ auth, laravelVersion, phpVersion }) {
                         <ChoiceReasonCard key={reason.id} reason={reason} />
                     ))}
                 </div>
-            </div>
+            </ContainerLandingPage>
 
             {/* Call to Action */}
-            <div className="flex flex-col md:flex-row items-start my-[20px] md:mt-0">
+            <ContainerLandingPage className="lg:flex-row items-start">
                 <div className="w-full md:min-w-[560px] bg-av-bg-card rounded-[20px] md:mr-[120px]">
                     <img
                         src="images/call_to_action.png"
@@ -131,17 +282,68 @@ export default function Home({ auth, laravelVersion, phpVersion }) {
                         to put your wisdom in writing? Learn more here.
                     </p>
                 </div>
-            </div>
+            </ContainerLandingPage>
 
-            <div className="flex flex-col items-center my-[20px] md:mt-0">
+            {/* Pricing & Plan */}
+            <ContainerLandingPage className="items-center">
                 <SubTitleCommon className="text-center">
                     Pricing & Plan
                 </SubTitleCommon>
                 <TitleCommon className="w-full md:max-w-[686px] text-center mt-[8px] text-[52px]">
                     Choose a plan that suits for your need
                 </TitleCommon>
-                <PackageCard />
-            </div>
+                <div className="w-full grid gap-x-[30px] gap-y-5 grid-cols-1 md:grid-cols-3 mt-[40px]">
+                    {packages.map((pk) => (
+                        <PackageCard key={pk.id} pk={pk} />
+                    ))}
+                </div>
+            </ContainerLandingPage>
+
+            {/* How it work */}
+            <ContainerLandingPage className="items-center">
+                <SubTitleCommon className="text-center">
+                    How it work
+                </SubTitleCommon>
+                <TitleCommon className="w-full text-center mt-[8px] text-[52px] mb-[40px] md:mb-0">
+                    How to write a Will online?
+                </TitleCommon>
+
+                {/* divider */}
+                <div className="hidden md:flex relative w-full h-[4px] bg-av-border rounded md:mt-[40px] md:mb-[80px]">
+                    <div className="w-[73px] h-[80px] absolute -translate-x-1/2 -top-1/2 left-1/2">
+                        <div className="w-full border-t-[6px] border-t-av-primary rounded"></div>
+                        <img
+                            className="w-full h-full object-contain"
+                            src="images/hook.png"
+                            alt="hook-icon"
+                        />
+                    </div>
+                </div>
+
+                {/* How it works steps */}
+                <div className="grid md:gap-x-[30px] gap-y-5 md:gap-y-0 grid-cols-1 md:grid-cols-3 md:px-[70px]">
+                    {howItWorksStep.map((step) => (
+                        <HowItWorkCard key={step.id} step={step} />
+                    ))}
+                </div>
+            </ContainerLandingPage>
+
+            {/* Faq */}
+            <ContainerLandingPage className="items-center">
+                <SubTitleCommon className="text-center">FAQs</SubTitleCommon>
+                <TitleCommon className="w-full text-center mt-[8px] text-[52px] mb-[40px]">
+                    Frequently asked questions
+                </TitleCommon>
+                <div className="w-full px-0 md:px-[113px] lg:px-[216px]">
+                    {faqs.map(faq => (
+                        <AccordionFaq
+                            key={faq.id}
+                            question={faq.question}
+                            answer={faq.answer}
+                        />
+                    ))}
+                </div>
+            </ContainerLandingPage>
         </div>
     );
 }
