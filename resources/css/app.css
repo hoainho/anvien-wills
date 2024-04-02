@@ -15,3 +15,14 @@
     width: 100%;
     margin: 0 auto;
 }
+
+
+@layer components {
+    .flex-center {
+      @apply flex justify-center items-center;
+    }
+
+    .disable {
+      @apply grayscale
+    }
+}

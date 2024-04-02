@@ -14,22 +14,22 @@ export default function Home() {
     const [willChoiceReason] = useState([
         {
             id: 1,
-            title: "Easy & Intuitive",
-            description: `Anyone can easily write An Vien's will online in just 20 minutes.<br /> With AI assistant, you can complete your will just by talking to AI. (Expected to launch in May)`,
+            title: "Dễ dàng & trực quan",
+            description: `Bất cứ ai cũng có thể dễ dàng viết di chúc trực tuyến của An viên chỉ trong 20 phút.<br />Với trợ lý AI, bạn có thể hoàn thành di chúc của mình chỉ bằng cách nói chuyện với AI. (Dự kiến ra mắt vào tháng 5)`,
             image: "/images/choice_reason_1.png",
         },
         {
             id: 2,
-            title: "Legally Available",
+            title: "Đầy đủ tính Pháp lý",
             description:
-                "An Vien will will be consulted and executed to fully meet the legal requirements and be protected by law.  If you need help from a lawyer, click on Lawyer Services.<br />An Vien's partner lawyers draft wills and provide legal services. (Slated to launch in April)",
+                "Di chúc An Viên sẽ được tư vấn và hiện thực văn bản đáp ứng đầy đủ tính pháp lý và được bảo vệ bởi pháp luật.<br />Nếu bạn cần sự trợ giúp từ luật sư, hãy nhấp vào Dịch vụ Luật sư. Luật sư đối tác của An Viên soạn thảo di chúc và cung cấp dịch vụ pháp lý. (Dự kiến ​​ra mắt vào tháng 4)",
             image: "/images/choice_reason_2.png",
         },
         {
             id: 3,
-            title: "Technology Upgrade",
+            title: "Nâng cấp công nghệ",
             description:
-                "An Vien's will is protected by strong security and anti-tampering technology.<br />Online Wills is a system that recognizes ownership of a will through blockchain and releases it as an NFT, allowing users to write stable wills forever. (Expected to launch in May)",
+                "Di chúc của An viên được bảo vệ bởi công nghệ bảo mật mạnh mẽ và chống giả mạo.<br />Di chúc trực tuyến là một hệ thống công nhận quyền sở hữu di chúc thông qua blockchain và phát hành nó dưới dạng NFT, cho phép người dùng viết di chúc ổn định mãi mãi. (Dự kiến ra mắt vào tháng 5)",
             image: "/images/choice_reason_3.png",
         },
     ]);
@@ -42,24 +42,16 @@ export default function Home() {
             unit: "",
             features: [
                 {
-                    name: "1 will",
+                    name: "Di chúc trực tuyến",
                     disable: false,
                 },
                 {
-                    name: "Free forever",
+                    name: "Chỉnh sửa di chúc bất kỳ lúc nào",
                     disable: false,
                 },
                 {
-                    name: "Up to 3 beneficiaries",
+                    name: "Để lại di nguyện trong di chúc",
                     disable: false,
-                },
-                {
-                    name: "Up to $100,000 in assets",
-                    disable: true,
-                },
-                {
-                    name: "No lawyer required",
-                    disable: true,
                 },
             ],
             isHighlight: false,
@@ -71,56 +63,40 @@ export default function Home() {
             unit: "tháng",
             features: [
                 {
-                    name: "1 will",
+                    name: "Di chúc trực tuyến",
                     disable: false,
                 },
                 {
-                    name: "Free forever",
+                    name: "Phát hành di chúc NFT",
                     disable: false,
                 },
                 {
-                    name: "Up to 3 beneficiaries",
+                    name: "Sở hữu khóa an toàn & bảo mật",
                     disable: false,
-                },
-                {
-                    name: "Up to $100,000 in assets",
-                    disable: false,
-                },
-                {
-                    name: "No lawyer required",
-                    disable: true,
-                },
-                {
-                    name: "Lawyer consultation included",
-                    disable: true,
                 },
             ],
             isHighlight: true,
         },
         {
             id: 3,
-            name: "Di chúc An Viên NFT",
+            name: "Dịch vụ Pháp lý An Viên",
             price: 100,
             unit: "phiên tư vấn",
             features: [
                 {
-                    name: "1 will",
+                    name: "30 phút tư vấn với luật sư",
                     disable: false,
                 },
                 {
-                    name: "Free forever",
+                    name: "Dịch vụ tư vấn pháp lý với luật sư của An Viên",
                     disable: false,
                 },
                 {
-                    name: "Up to 3 beneficiaries",
+                    name: "Dịch vụ tư vấn pháp lý liê quan vấn đề thừa kế (chi phí riêng)",
                     disable: false,
                 },
                 {
-                    name: "Up to $100,000 in assets",
-                    disable: false,
-                },
-                {
-                    name: "No lawyer required",
+                    name: "Tư vấn các dịch vụ pháp lý khác",
                     disable: false,
                 },
             ],
@@ -133,55 +109,60 @@ export default function Home() {
             id: 1,
             icon: "/icons/chat.png",
             bgColor: "bg-av-bg-step-1",
-            title: "Answer our simple questions",
+            title: "Trả lời một số câu hỏi thông tin cơ bản",
             description:
-                "Our online journey makes writing a will quick and easy. You can do it from the comfort of your own home in just 15 minutes.",
+                "Hành trình trực tuyến của chúng tôi giúp việc viết di chúc trở nên nhanh chóng và dễ dàng. Bạn có thể làm điều đó một cách thoải mái tại nhà riêng của mình chỉ trong 15 phút.",
         },
         {
             id: 2,
             icon: "/icons/person_check.png",
             bgColor: "bg-av-bg-step-2",
-            title: "Get it approved by our specialists",
+            title: "Nhận được sự tư vấn của các chuyên gia của chúng tôi",
             description:
-                "Our online will writing service includes specialist checking to make sure your wishes are clear – and it only takes up to 5 days.",
+                "Sau khi viết di chúc và được các chuyên gia của chúng tôi kiểm tra, bạn cần in và ký tên trước mặt hai nhân chứng để đảm bảo tính ràng buộc về mặt pháp lý. Tải di chúc của bạn xuống để in tại nhà hoặc chúng tôi có thể in cho bạn.",
         },
         {
             id: 3,
             icon: "/icons/blockchain.png",
             bgColor: "bg-av-bg-step-3",
-            title: "Digitalize Authorized with NFT Tech",
+            title: "Số hóa được ủy quyền với NFT Tech",
             description:
-                "After writing a will and getting it checked by our specialists, you need to print and sign it in front of two witnesses to make it legally binding. Download your will to print at home, or we can print it for you.",
+                "Dịch vụ viết di chúc trực tuyến của chúng tôi bao gồm việc kiểm tra chuyên môn để đảm bảo mong muốn của bạn rõ ràng - và quá trình này chỉ mất tối đa 5 ngày.",
         },
     ]);
 
     const [faqs] = useState([
         {
             id: 1,
-            question: "How does An Vien's online will service work?",
-            answer: "Our online will writing service allows you to easily create your will from the comfort of your own home. You simply answer",
+            question: "Dịch vụ di chúc trực tuyến của An Viên có tốn chi phí không?",
+            answer: "Hiện tại An Viên đang cung cấp dịch vụ sử dụng và lưu trữ MIỄN PHÍ di chúc trực tuyến, vì vậy sẽ có không có bất kỳ chi phí nào cho việc tạo tài khoản và bắt đầu tạo di chúc trực tuyến của bạn.",
         },
         {
-            id:2,
-            question: "How much does An Vien's online will service cost?",
-            answer: "Our basic online will writing service is completely free. You can create one will with up to 3 beneficiaries and assets up to $100,000 value",
+            id: 2,
+            question: "Di chúc của tôi có hợp pháp hóa tại nước sở tại?",
+            answer: "Hiện tại An Viên đang cung cấp dịch vụ sử dụng và lưu trữ MIỄN PHÍ di chúc trực tuyến, vì vậy sẽ có không có bất kỳ chi phí nào cho việc tạo tài khoản và bắt đầu tạo di chúc trực tuyến của bạn.",
         },
         {
-            id:3,
-            question: "Can I include special requests in my will?",
-            answer: "Yes, you can include any special requests in the 'Message to loved ones' section of your will",
+            id: 3,
+            question: "Phát hành số hóa di chúc NFT là như thế nào?",
+            answer: "Hiện tại An Viên đang cung cấp dịch vụ sử dụng và lưu trữ MIỄN PHÍ di chúc trực tuyến, vì vậy sẽ có không có bất kỳ chi phí nào cho việc tạo tài khoản và bắt đầu tạo di chúc trực tuyến của bạn.",
         },
         {
-            id:4,
-            question: "Can I change the beneficiaries of my will?",
-            answer: "Yes, you can change the beneficiaries of your will at any time for free using our online service",
+            id: 4,
+            question: "Tôi có thể liên hệ luật sư để tư vấn đề các tài sản thừa kế của mình?",
+            answer: "Hiện tại An Viên đang cung cấp dịch vụ sử dụng và lưu trữ MIỄN PHÍ di chúc trực tuyến, vì vậy sẽ có không có bất kỳ chi phí nào cho việc tạo tài khoản và bắt đầu tạo di chúc trực tuyến của bạn.",
         },
         {
-            id:5,
-            question: "Do I need witnesses to sign my will?",
-            answer: "Yes, for your will to be legally valid, you need to sign it in the presence"
-        }
-    ])
+            id: 5,
+            question: "Sau khi tôi mất thì làm sao đảm bảo được di chúc của tôi được thực hiện đúng?",
+            answer: "Hiện tại An Viên đang cung cấp dịch vụ sử dụng và lưu trữ MIỄN PHÍ di chúc trực tuyến, vì vậy sẽ có không có bất kỳ chi phí nào cho việc tạo tài khoản và bắt đầu tạo di chúc trực tuyến của bạn.",
+        },
+        {
+            id: 6,
+            question: "Di chúc trực tuyến có được hợp thức hóa ở Việt Nam?",
+            answer: "Hiện tại An Viên đang cung cấp dịch vụ sử dụng và lưu trữ MIỄN PHÍ di chúc trực tuyến, vì vậy sẽ có không có bất kỳ chi phí nào cho việc tạo tài khoản và bắt đầu tạo di chúc trực tuyến của bạn.",
+        },
+    ]);
     return (
         <div className="flex flex-col px-[16px] xl:p-0">
             {/* Hero */}
@@ -189,21 +170,21 @@ export default function Home() {
                 <div className="flex flex-col w-full">
                     <div className="flex flex-col">
                         <TitleCommon>
-                            Write Your Will for Free <br /> & Easily with An
-                            Vien
+                            Viết di chúc trực tuyến dễ dàng & miễn phí với An
+                            Viên
                         </TitleCommon>
 
                         <h6 className="text-[20px] text-av-light font-normal mb-[40px] md:mb-[80px] leading-[32px]">
-                            Write Your Will for Free & Easily with An Vien.{" "}
-                            <br /> Easily create an online will with strong
-                            legal effect with the click of a button. An vien
-                            provide personalized online will service to everyone
-                            in Vietnam.
+                            Viết di chúc miễn phí và dễ dàng với An Viên. <br />
+                            Dễ dàng tạo di chúc trực tuyến có hiệu lực pháp lý
+                            mạnh mẽ chỉ bằng một nút bấm. <br />
+                            An viên cung cấp dịch vụtrực tuyến được cá nhân hóa
+                            cho mọi người ở Việt Nam.
                         </h6>
                     </div>
                     <div className="flex pt-[20px] border-t-[1px] border-t-av-border">
                         <PrimaryButton href={"https://will.anvien.online/"}>
-                            Start My Will
+                            Viết di chúc ngay
                         </PrimaryButton>
                         <Link
                             href="/"
@@ -216,7 +197,7 @@ export default function Home() {
                                 />
                             </div>
                             <span className="text-center tracking-tight text-[18px] text-center text-av-primary font-semibold leading-[28px]">
-                                Watch Tutorial
+                                Xem hướng dẫn
                             </span>
                         </Link>
                     </div>
@@ -234,14 +215,14 @@ export default function Home() {
             {/* Why An Vien Will? */}
             <ContainerLandingPage>
                 <SubTitleCommon className="text-center">
-                    Lorem ipsum dolor
+                    Trực tuyến và bảo mật
                 </SubTitleCommon>
                 <TitleCommon className="w-full text-center mt-[8px]">
-                    Why An Vien Will?
+                    Tại sao lựa chọn di chúc An Viên?
                 </TitleCommon>
                 <h6 className="font-normal leading-[22px] text-center text-av-black mt-[20px]">
-                    Lorem ipsum dolor sit amet consectetur. Cursus quis morbi
-                    ornare suscipit ultrices lorem malesuada tellus fusce.
+                    Đổi mới trong cách thức tạo, lưu trữ và hợp thức hoá di chúc
+                    trực tuyến
                 </h6>
 
                 <div className="grid gap-x-10 gap-y-5 grid-cols-1 md:grid-cols-3 mt-[40px]">
@@ -262,24 +243,26 @@ export default function Home() {
                 </div>
                 <div className="flex flex-col justify-start items-start">
                     <SubTitleCommon className="text-left">
-                        Lorem ipsum dolor
+                        Di chúc cho mọi đối tượng
                     </SubTitleCommon>
                     <TitleCommon className="w-full text-left mt-[8px]">
-                        I'm just a normal person. Do I need a will?
+                        Đối với một người bình thường, tôi có cần viết di chúc?
                     </TitleCommon>
                     <PrimaryButton
                         href={"https://will.anvien.online/"}
                         className="w-fit px-[70px] py-[16px]"
                     >
-                        Start My Will
+                        Viết di chúc ngay
                     </PrimaryButton>
                     <p className="text-[16px] leading-[26px] font-normal text-left text-av-black border-t border-t-av-border pt-[20px] mt-[40px] md:mt-[80px]">
-                        It doesn't matter if you're young or old, rich or poor,
-                        healthy or sick - every parent can benefit from the
-                        security of a will. Our easy will allows you to make
-                        important decisions, like naming a guardian for your
-                        little ones. If parents know best, doesn't it make sense
-                        to put your wisdom in writing? Learn more here.
+                        Không quan trọng bạn già hay trẻ, giàu hay nghèo, khỏe
+                        mạnh hay bệnh tật - mọi bậc cha mẹ đều có thể được hưởng
+                        lợi từ sự bảo đảm của di chúc. Ý chí dễ dàng của chúng
+                        tôi cho phép bạn đưa ra những quyết định quan trọng,
+                        chẳng hạn như chỉ định người giám hộ cho con nhỏ của
+                        bạn. Nếu cha mẹ biết rõ nhất, việc viết ra sự khôn ngoan
+                        của bạn chẳng phải là điều hợp lý sao? Tim hiểu thêm ở
+                        đây.
                     </p>
                 </div>
             </ContainerLandingPage>
@@ -287,10 +270,10 @@ export default function Home() {
             {/* Pricing & Plan */}
             <ContainerLandingPage className="items-center">
                 <SubTitleCommon className="text-center">
-                    Pricing & Plan
+                    Giá dịch vụ
                 </SubTitleCommon>
                 <TitleCommon className="w-full md:max-w-[686px] text-center mt-[8px] text-[52px]">
-                    Choose a plan that suits for your need
+                    Chọn một kế hoạch phù hợp với nhu cầu của bạn
                 </TitleCommon>
                 <div className="w-full grid gap-x-[30px] gap-y-5 grid-cols-1 md:grid-cols-3 mt-[40px]">
                     {packages.map((pk) => (
@@ -302,10 +285,10 @@ export default function Home() {
             {/* How it work */}
             <ContainerLandingPage className="items-center">
                 <SubTitleCommon className="text-center">
-                    How it work
+                    Cách thức hoạt động
                 </SubTitleCommon>
                 <TitleCommon className="w-full text-center mt-[8px] text-[52px] mb-[40px] md:mb-0">
-                    How to write a Will online?
+                    Làm thế nào để tạo di chúc trực tuyến?
                 </TitleCommon>
 
                 {/* divider */}
@@ -330,12 +313,12 @@ export default function Home() {
 
             {/* Faq */}
             <ContainerLandingPage className="items-center">
-                <SubTitleCommon className="text-center">FAQs</SubTitleCommon>
+                <SubTitleCommon className="text-center">Giải đáp thắc mắc cùng An Viên</SubTitleCommon>
                 <TitleCommon className="w-full text-center mt-[8px] text-[52px] mb-[40px]">
-                    Frequently asked questions
+                    Câu hỏi thường gặp
                 </TitleCommon>
                 <div className="w-full px-0 md:px-[113px] lg:px-[216px]">
-                    {faqs.map(faq => (
+                    {faqs.map((faq) => (
                         <AccordionFaq
                             key={faq.id}
                             question={faq.question}
