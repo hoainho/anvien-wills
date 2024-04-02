@@ -7,7 +7,7 @@ import { resolvePageComponent } from "laravel-vite-plugin/inertia-helpers";
 import Navbar from "./Layouts/Navbar";
 import Footer from "./Layouts/Footer";
 
-const appName = import.meta.env.VITE_APP_NAME || "Laravel";
+const appName = import.meta.env.VITE_APP_NAME || "An Vien Wills";
 
 createInertiaApp({
     title: (title) => `${title} - ${appName}`,

@@ -10,7 +10,7 @@ export default function HowItWorkCard({ step }) {
                     <img src={step.icon} alt="chat-icon" />
                 </div>
                 <div className="flex flex-col justify-start items-center mb-[20px]">
-                    <TitleCommon className="w-full mt-[20px] mb-[14px] leading-[24px] text-[25px]">
+                    <TitleCommon className="w-full mt-[20px] mb-[14px] leading-[24px] !text-[25px]">
                         {step.title}
                     </TitleCommon>
                     <h6 className="font-normal leading-[22px] text-av-black mt-[20px]">

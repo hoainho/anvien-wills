@@ -5,14 +5,15 @@ import PrimaryButton from "./PrimaryButton";
 export default function PackageCard({ pk }) {
     return (
         <div
-            className={`flex flex-col p-[40px] bg-white border-[1px] border-av-border rounded ${
+            className={`flex flex-col justify-between p-[40px] bg-white border-[1px] border-av-border rounded ${
                 pk.isHighlight ? "scale-100 md:scale-105 shadow-lg" : ""
             }`}
         >
+            <div>
             <SubTitleCommon className="mt-0">{pk.name}</SubTitleCommon>
             <div className="flex justify-start items-center">
                 <TitleCommon className="mt-[8px] mb-[20px] text-[48px] -tracking-tight block">
-                    {pk.price === 0 ? "Free" : `$${pk.price}`}
+                    {pk.price === 0 ? "Miễn phí" : `$${pk.price}`}
                 </TitleCommon>
                 <h6 className="w-fit text-[20px] text-av-light font-normal">
                     {pk.unit ? `/${pk.unit}` : ""}
@@ -31,11 +32,12 @@ export default function PackageCard({ pk }) {
                     ))}
                 </ul>
             </div>
+            </div>
             <PrimaryButton
                 href={"https://will.anvien.online/"}
-                className="w-full"
+                className={`w-full self-end ${pk.price !== 0 ? 'disable' : ''}`}
             >
-                Write Will Now
+                {pk.price !== 0 ? 'Viết di chúc ngay' : 'Sắp ra mắt'}
             </PrimaryButton>
         </div>
     );

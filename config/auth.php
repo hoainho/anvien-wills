@@ -37,7 +37,7 @@ return [
 
     'guards' => [
         'web' => [
-            // 'driver' => 'session',
+            'driver' => 'session',
             'provider' => 'users',
         ],
     ],
@@ -47,7 +47,7 @@ return [
     | User Providers
     |--------------------------------------------------------------------------
     |
-    | All authentication guards have a user provider, which defines how the
+    | All authentication guards have a user ưprovider, which defines how the
     | users are actually retrieved out of your database or other storage
     | system used by the application. Typically, Eloquent is utilized.
     |

@@ -39,7 +39,7 @@ return [
         'public' => [
             'driver' => 'local',
             'root' => storage_path('app/public'),
-            'url' => env('APP_URL').'/storage',
+            'url' => "https://b2c8-2402-800-63ba-f395-6118-c5cf-a9e9-4b45.ngrok-free.app/storage",
             'visibility' => 'public',
             'throw' => false,
         ],
