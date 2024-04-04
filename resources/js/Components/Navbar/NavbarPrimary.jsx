@@ -41,11 +41,11 @@ const NavbarPrimary = ({
             {menu.map((item, index) => (
                 <li
                     key={item.name + index}
-                    className={`text-av-white mr-[32px] hover:text-av-primary cursor-pointer ${
+                    className={`text-av-white mr-[32px] hover:text-av-primary cursor-pointer ${classNameLink} ${
                         index === 0
-                            ? "text-av-disabled hover:text-av-disabled select-none !cursor-default hidden md:block"
+                            ? "!text-av-disabled hover:text-av-disabled select-none !cursor-default hidden md:block"
                             : ""
-                    } ${classNameLink}`}
+                    }`}
                     onClick={() => handleLink(item.ref)}
                 >
                     {item.name}

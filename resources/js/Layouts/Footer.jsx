@@ -33,11 +33,11 @@ const Footer = () => {
                 <div className="flex flex-col justify-start">
                     <div className="flex flex-col justify-start mb-[24px] gap-y-[24px]">
                         <p className="font-bold">Thông tin liên lạc</p>
-                        <p className="font-normal">
-                            Số điện thoại: 028.6686.5560
+                        <p className="font-normal flex">
+                            Số điện thoại: <p className="underline">028.6686.5560</p>
                         </p>
-                        <p className="font-normal">
-                            Email CSKH (người dùng): cskh@anvien.online
+                        <p className="font-normal flex">
+                            Email CSKH: <p className="underline">cskh@anvien.online</p>
                         </p>
                     </div>
                 </div>
