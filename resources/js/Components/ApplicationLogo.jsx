@@ -1,7 +1,14 @@
-export default function ApplicationLogo({className = ""}) {
+import { Link } from "@inertiajs/react";
+
+export default function ApplicationLogo({
+    className = "",
+    src = "images/logo.png",
+}) {
     return (
         <div className={`w-full h-full ${className}`}>
-            <img src="images/logo.png" alt="logo-app" className="w-full h-full"/>
+            <Link>
+                <img src={src} alt="logo-app" className="w-full h-full" />
+            </Link>
         </div>
     );
 }

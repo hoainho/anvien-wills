@@ -37,7 +37,7 @@ export default function PackageCard({ pk }) {
                 href={"https://will.anvien.online/"}
                 className={`w-full self-end ${pk.price !== 0 ? 'disable' : ''}`}
             >
-                {pk.price !== 0 ? 'Viết di chúc ngay' : 'Sắp ra mắt'}
+                {pk.price === 0 ? 'Viết di chúc ngay' : 'Sắp ra mắt'}
             </PrimaryButton>
         </div>
     );

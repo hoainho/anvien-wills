@@ -18,12 +18,11 @@ createInertiaApp({
         ),
     setup({ el, App, props }) {
         const root = createRoot(el);
-
         root.render(
             <div>
-                <Navbar />
+                <Navbar/>
                 <div className="container">
-                    <App {...props} />
+                    <App {...props}/>
                 </div>
                 <Footer />
             </div>

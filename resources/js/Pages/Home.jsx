@@ -10,7 +10,9 @@ import ContainerLandingPage from "@/Layouts/Container";
 import { Link } from "@inertiajs/react";
 import { useState } from "react";
 
-export default function Home() {
+export default function Home(props) {
+    console.log("🚀 ~ props:", props);
+
     const [willChoiceReason] = useState([
         {
             id: 1,
@@ -134,7 +136,8 @@ export default function Home() {
     const [faqs] = useState([
         {
             id: 1,
-            question: "Dịch vụ di chúc trực tuyến của An Viên có tốn chi phí không?",
+            question:
+                "Dịch vụ di chúc trực tuyến của An Viên có tốn chi phí không?",
             answer: "Hiện tại An Viên đang cung cấp dịch vụ sử dụng và lưu trữ MIỄN PHÍ di chúc trực tuyến, vì vậy sẽ có không có bất kỳ chi phí nào cho việc tạo tài khoản và bắt đầu tạo di chúc trực tuyến của bạn.",
         },
         {
@@ -149,12 +152,14 @@ export default function Home() {
         },
         {
             id: 4,
-            question: "Tôi có thể liên hệ luật sư để tư vấn đề các tài sản thừa kế của mình?",
+            question:
+                "Tôi có thể liên hệ luật sư để tư vấn đề các tài sản thừa kế của mình?",
             answer: "Hiện tại An Viên đang cung cấp dịch vụ sử dụng và lưu trữ MIỄN PHÍ di chúc trực tuyến, vì vậy sẽ có không có bất kỳ chi phí nào cho việc tạo tài khoản và bắt đầu tạo di chúc trực tuyến của bạn.",
         },
         {
             id: 5,
-            question: "Sau khi tôi mất thì làm sao đảm bảo được di chúc của tôi được thực hiện đúng?",
+            question:
+                "Sau khi tôi mất thì làm sao đảm bảo được di chúc của tôi được thực hiện đúng?",
             answer: "Hiện tại An Viên đang cung cấp dịch vụ sử dụng và lưu trữ MIỄN PHÍ di chúc trực tuyến, vì vậy sẽ có không có bất kỳ chi phí nào cho việc tạo tài khoản và bắt đầu tạo di chúc trực tuyến của bạn.",
         },
         {
@@ -269,7 +274,7 @@ export default function Home() {
 
             {/* Pricing & Plan */}
             <ContainerLandingPage className="items-center">
-                <SubTitleCommon className="text-center">
+                <SubTitleCommon className="text-center" id="pricing">
                     Giá dịch vụ
                 </SubTitleCommon>
                 <TitleCommon className="w-full md:max-w-[686px] text-center mt-[8px] text-[52px]">
@@ -313,7 +318,9 @@ export default function Home() {
 
             {/* Faq */}
             <ContainerLandingPage className="items-center">
-                <SubTitleCommon className="text-center">Giải đáp thắc mắc cùng An Viên</SubTitleCommon>
+                <SubTitleCommon className="text-center">
+                    Giải đáp thắc mắc cùng An Viên
+                </SubTitleCommon>
                 <TitleCommon className="w-full text-center mt-[8px] text-[52px] mb-[40px]">
                     Câu hỏi thường gặp
                 </TitleCommon>
