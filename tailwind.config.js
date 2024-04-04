@@ -17,6 +17,8 @@ export default {
             },
         },
         colors: {
+            "av-disabled": "rgba(255, 255, 255, 0.1)",
+            "av-overlay": '#212121',
             "av-primary": "#409587",
             "av-light": "#667085",
             "av-normal": "#454953",
